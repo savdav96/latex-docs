@@ -40,7 +40,13 @@ With it, the POSIX syscalls of the virtualized machine are on-the-fly translated
     \item Install the required packages: 
     \begin{verbatim}sudo apt update && sudo apt install gcc flex bison\end{verbatim}
     \item In Windows, open Visual Studio Code and install the \href{https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl}{Remote - WSL extension}. This will prevent you from installing \verb+code+ under Linux environment.
-    \item In Windows, open Explorer and type \verb+\\wsl$\<DISTRO_NAME>+ in the search bar (for example: \verb+\\wsl$\Ubuntu+) and press \keys{\enter}. Use this Virtual Server to access Linux folders.
   \end{enumerate}
 \section{First setup and usage of ACSE}
+\begin{enumerate}
+  \item In Windows, open Explorer and type \verb+\\wsl$\<YOUR_DISTRO_NAME>+ in the search bar (for example: \verb+\\wsl$\Ubuntu+) and press \keys{\enter}. Use this Virtual Server to access Linux directories.
+  \item Download the ACSE archive and unzip it into a handy Linux directory (for example \verb+\home\<YOUR_USER_NAME>+). 
+  \item From Windows, open Visual Studio Code, press the green button in the button left corner and choose \verb+Remote - WSL: New Window+. A new window will open, connected to the Linux environment.
+  \item Open a new Terminal (\menu{Terminal > New Terminal}). With this window open, the output will be from Linux's \verb+bash+ and no longer from \verb+cmd+.
+\item Use \verb+cd+ to select the previous ACSE folder, then type \verb+make+. Note that this is required \emph{every time} the source files (including \verb+Acse.lex+ and \verb+Acse.y+) are modified, since \verb+acse+ binary must be recompiled.
+\end{enumerate}
 \end{document}
