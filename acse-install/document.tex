@@ -45,7 +45,7 @@ With it, the POSIX syscalls of the virtualized machine are on-the-fly translated
     Once opened the previous installed Linux distro and waited the environment to set up, choose a UNIX username and a password.
     \item Install the required packages: 
     \begin{verbatim}sudo apt update && sudo apt install gcc flex bison\end{verbatim}
-    \item In Windows, open Visual Studio Code and install the \href{https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl}{Remote - WSL extension}. This will prevent you from installing \verb+code+ under Linux environment.
+    \item In Windows, open Visual Studio Code and install the \href{https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl}{Remote - WSL extension}. This will prevent you from installing \verb+code+ under Linux environment and allow to use the builtin Visual Studio Code's terminal.
     \item Download the ACSE archive and unzip it into a handy Linux directory (for example \verb+\home\<YOUR_USER_NAME>+). \newline \newline \begin{small} Note: in Windows you can use the builtin 9P Virtual Server to access Linux directories. Open Explorer and type \verb+\\wsl$\<YOUR_DISTRO_NAME>+ in the search bar (for example: \verb+\\wsl$\Ubuntu+) and press \keys{\enter}.\end{small}
     \item Open the Linux distro App, enter the command \verb+nano $HOME/.bashrc+ then add the follwing line to the file:
     \verb+PATH=$PATH:<PATH_TO_ACSE_FOLDER>/bin+ Press \keys{Ctrl + X}, type Y and press \keys{Enter} to save.

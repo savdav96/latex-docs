@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1582339615 "/home/davide/latex-docs/acse-install/document.tex" "/home/davide/latex-docs/acse-install/document.pdf" "document" 1582339617
+["pdflatex"] 1582339772 "/home/davide/latex-docs/acse-install/document.tex" "/home/davide/latex-docs/acse-install/document.pdf" "document" 1582339774
   "/dev/null" 1582323394 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/etc/texmf/web2c/texmf.cnf" 1582327836 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/davide/latex-docs/acse-install/document.aux" 1582339617 1176 99ae1c38559e6c8bcc35efca7f1f83d2 ""
-  "/home/davide/latex-docs/acse-install/document.tex" 1582339612 4632 f40fb109a4ec6e9b897dcfb9eb9c20b1 ""
+  "/home/davide/latex-docs/acse-install/document.aux" 1582339774 1176 99ae1c38559e6c8bcc35efca7f1f83d2 ""
+  "/home/davide/latex-docs/acse-install/document.tex" 1582339770 4691 b7cdcb2ac80e0762502bb2dbf6f4bed9 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1463430686 2437 443c81fb50993bacedc5f9a206c322b0 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -183,13 +183,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1575846954 38842 929a1d7a93d5a7ba93034bbe3531fec4 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1582328150 4693543 b5d35b0583b8a066770222aee86d0503 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1582328238 4291507 3dca2dd6a57fa7cd4396eb5266df7c39 ""
-  "document.aux" 1582339617 1176 99ae1c38559e6c8bcc35efca7f1f83d2 "pdflatex"
-  "document.out" 1582339617 231 87c07ba7e5ab0a3a4aa6132c48e7be80 "pdflatex"
-  "document.tex" 1582339612 4632 f40fb109a4ec6e9b897dcfb9eb9c20b1 ""
+  "document.aux" 1582339774 1176 99ae1c38559e6c8bcc35efca7f1f83d2 "pdflatex"
+  "document.out" 1582339774 231 87c07ba7e5ab0a3a4aa6132c48e7be80 "pdflatex"
+  "document.tex" 1582339770 4691 b7cdcb2ac80e0762502bb2dbf6f4bed9 ""
   (generated)
-  "document.out"
-  "document.pdf"
-  "document.aux"
   "document.log"
-  "/home/davide/latex-docs/acse-install/document.log"
   "/home/davide/latex-docs/acse-install/document.pdf"
+  "document.aux"
+  "/home/davide/latex-docs/acse-install/document.log"
+  "document.pdf"
+  "document.out"
