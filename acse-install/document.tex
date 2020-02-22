@@ -1,6 +1,15 @@
 \documentclass{article}
 \usepackage{graphicx}
 \usepackage[os=win]{menukeys}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\makeatletter
+\tw@make@key@box{OS@mac}{\faApple}
+\tw@make@key@box{OS@win}{\faWindows}
+\tw@make@key@macro*{\OS}
+\tw@make@key@box{capslock@win}{\textsf{CapsLock}}
+\tw@make@key@box{capslock@mac}{\textsf{caps lock}}
+\makeatother
 
 \begin{document}
 
@@ -12,7 +21,8 @@
 \section{Requirements}
 \begin{itemize}
     \item Windows 10 build 14393 or above.
-    \item The ACSE devkit version 1.1.5 or above. This can be provided by your lecturer on the appropriate channels.
+    \item The ACSE source code version 1.1.5 or above. This can be provided by your lecturer on the appropriate channels (e.g: BeeP).
+    \item \href{https://code.visualstudio.com/}{Microsoft Visual Studio Code}
 \end{itemize}
 
 \section{Installation of Windows Subsystem for Linux (WSL)}
@@ -21,12 +31,16 @@ a complete Virtual Machine on the System or to use the dual boot, the best optio
 the WSL. Windows Subsystem for Linux is a lightweight version of a Linux distro under Windows 10 environment.
 With it, the POSIX syscalls of the virtualized machine are on-the-fly translated into Windows NT system calls.
 \begin{enumerate}
-\item Press \keys{Win + R}, type 'powershell' and press \keys{\ctrl + \shift + \enter}. Insert the Administrator password if prompted.
+    \item Press \keys{\OSwin + R}, type \verb'powershell' and press \keys{\ctrl + \shift + \enter}. Insert the Administrator password if prompted.
     \item Type: 
-    \begin{verbatim} 
-    Enable-WindowsOptionalFeature -Online 
-    -FeatureName Microsoft-Windows-Subsystem-Linux \end{verbatim} and press \keys{\enter}.
-    \item Reboot the computer.
-    \item Go to the Microsoft Store Application and install a Linux distro. \url{https://www.microsoft.com/it-it/p/pengwin/9nv1gv1pxz6p}{Pengwin} or \href{https://www.microsoft.com/it-it/p/ubuntu/9nblggh4msv6}{Ubuntu} are recommended.
+    \begin{scriptsize}{\begin{verbatim}Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux\end{verbatim}}\end{scriptsize}
+    and press \keys{\enter}. Reboot the computer if asked.
+    \item Go to the Microsoft Store Application and install a packaged Linux distro. \href{https://www.microsoft.com/it-it/p/pengwin/9nv1gv1pxz6p}{Pengwin} or \href{https://www.microsoft.com/it-it/p/ubuntu/9nblggh4msv6}{Ubuntu} are recommended.
+    Once opened the previous installed Linux distro and waited the environment to set up, choose a UNIX username and a password.
+    \item Install the required packages: 
+    \begin{verbatim}sudo apt update && sudo apt install gcc flex bison\end{verbatim}
+    \item In Windows, open Visual Studio Code and install the \href{https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl}{Remote - WSL extension}. This will prevent you from installing \verb+code+ under Linux environment.
+    \item In Windows, open Explorer and type \verb+\\wsl$\<DISTRO_NAME>+ in the search bar (for example: \verb+\\wsl$\Ubuntu+) and press \keys{\enter}. Use this Virtual Server to access Linux folders.
   \end{enumerate}
+\section{First setup and usage of ACSE}
 \end{document}
