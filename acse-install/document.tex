@@ -30,7 +30,6 @@
     \item The ACSE source code version 1.1.5 or above. This can be provided by your lecturer on the appropriate channels (e.g: BeeP).
     \item \href{https://code.visualstudio.com/}{Microsoft Visual Studio Code}
 \end{itemize}
-
 \section{Installation of Windows Subsystem for Linux (WSL) and first setup}
 In order to provide a clean installation of the required binaries for the compiler to work, without the need to install 
 a complete Virtual Machine on the System or to use the dual boot, the best option is to opt for
@@ -46,13 +45,15 @@ With it, the POSIX syscalls of the virtualized machine are on-the-fly translated
     \item Install the required packages: 
     \begin{verbatim}sudo apt update && sudo apt install gcc flex bison\end{verbatim}
     \item In Windows, open Visual Studio Code and install the \href{https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl}{Remote - WSL extension}. This will prevent you from installing \verb+code+ under Linux environment and allow to use the builtin Visual Studio Code's terminal.
-    \item Download the ACSE archive and unzip it into a handy Linux directory (for example \verb+\home\<YOUR_USER_NAME>+). \newline \newline \begin{small} Note: in Windows you can use the builtin 9P Virtual Server to access Linux directories. Open Explorer and type \verb+\\wsl$\<YOUR_DISTRO_NAME>+ in the search bar (for example: \verb+\\wsl$\Ubuntu+) and press \keys{\enter}.\end{small}
+    \item Download the ACSE archive and unzip it into a handy Linux directory (for example \verb+/home/acse_x.x.x+, where x.x.x is the version number). \newline \newline \begin{small} Note: in Windows you can use the builtin 9P Virtual Server to access Linux directories. Open Explorer and type \verb+\\wsl$\<YOUR_DISTRO_NAME>+ in the search bar (for example: \verb+\\wsl$\Ubuntu+) and press \keys{\enter}.\end{small}
     \item Open the Linux distro App, enter the command \verb+nano $HOME/.bashrc+ then add the follwing line to the file:
-    \verb+PATH=$PATH:<PATH_TO_ACSE_FOLDER>/bin+ Press \keys{Ctrl + X}, type Y and press \keys{Enter} to save.
+    \verb+PATH=$PATH:<PATH_TO_ACSE_FOLDER>/bin+ Press \keys{Ctrl + X}, type \keys{Y} and press \keys{Enter} to save.
+    \item Enter the command \verb+source ~/.bashrc+ to reload the shell with the new environment variable.
+
   \end{enumerate}
 \section{Usage}
 \begin{enumerate}
-  \item Open the Linux distro App and use \verb+cd+ to select the acse folder (\verb+cd acse_x.x.x/acse+, where x.x.x is the version number).
+  \item Open the Linux distro App and use \verb+cd+ to select the inner acse folder \newline(\verb+cd acse_x.x.x/acse+).
   \item Type \verb+code Acse.lex Acse.y+ to edit your language functionalities. This will open a new Visual Studio Code window under the Linux context. The output of the builtin Terminal emulator will be from Linux's \verb+bash+ and no longer from \verb+cmd+.
   \item When finished coding, move to the acse root folder (\verb+acse_x.x.x+) and enter the \verb+make+ command. \newline \newline \begin{small} Note: this is required \emph{every time} the source files (including \verb+Acse.lex+ and \verb+Acse.y+) are modified, since \verb+acse+ binary must be recompiled.\end{small}
 \end{enumerate}
