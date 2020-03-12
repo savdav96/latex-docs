@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{lingmacros}
+\usepackage{tree-dvips}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+
+
+\setcounter{secnumdepth}{4}
+\begin{document}
+\title{%
+  Advanced Computer Architectures Performance formulas \\
+  \large Computer Science Engineer \\
+  Politecnico di Milano \\
+}
+
+\author{Davide Savoldelli}
+
+\maketitle
+\tableofcontents
+\newpage
+\section{Speedup}        
+    \subsection{Performance}
+        \[Performance(x) = \frac{1}{Ex\:Time(x)}\]
+    \subsection{Performance ratios}
+        "X is n times faster than Y" means
+        \[\frac{Ex\:Time(y)}{Ex\:Time(x)} = \frac{Performance(x)}{Performance(y)}\]
+    \subsection{Performance percentage}
+        "X is n \% times faster than Y" means
+        \[\frac{Ex\:Time(y)}{Ex\:Time(x)} = 1 + \frac{n}{100}\]
+        \[Speedup(x, y) = \frac{Performance(x)}{Performance(y)}\]
+\section{Amdhal's law}
+    \[Speedup(E) = \frac{Performance_{with}(E)}{Performance_{without}(E)} = \frac{Ex\:Time_{without}(E)}{Ex\:Time_{with}(E)}\]
+    \[Ex\:Time_{with} = Ex\:Time_{without}\cdot[(1-Fraction_{enhanced}) + \frac{Fraction_{enhanced}}{Speedup_{enhanced}}]\]
+    \[Speedup(E) = \frac{Ex\:Time_{without}(E)}{Ex\:Time_{with}(E)} = \frac{1}{(1-Fraction_{enhanced}) + \frac{Fraction_{enhanced}}{Speedup_{enhanced}}}\]
+\newpage
+\section{CPU Time - execution time}
+    \subsection{CPU Time}
+    \[CPU\:time = \frac{\#\:CC}{CC\:Frequency}\]
+    \[CPU\:time = \#\:CC \cdot CC\:Time\]
+
+    \[CPU\:time = \frac{Time}{Program} = \frac{\#Instructions}{Program} \cdot \frac{\#CC}{Instruction} \cdot \frac{Time}{CC}\]
+    \[CPU\:time = IC \cdot CPI \cdot CC\:Time\]
+    \newline
+    \textbf{IC}: Instructions count, the number of instructions the program is composed, it depends on  program - obviously -, compiler and Instruction Set.
+    \newline\newline
+    \textbf{CPI}: Average Cycles per Instruction, this term is reduced with pipelining, it depends on Instruction Set and organization of the processor.
+    \newline\newline
+    \textbf{CC Time}: the time needed to perform a the Clock Cycle (CC), it is the inverse of Clock Frequency. It depends on organization of the processor and the technology used.
+
+
+    \subsection{Average CPI}
+    \[CPI = \frac{CPU\:time}{IC \cdot CC\:Time} = \frac{CPU\:Time\cdot CC\:Frequency}{IC}\]
+    \[CPU\:time = CC\:Time \cdot \sum_{i=1}^{IC}{CPI_i \cdot \#I_i}\]
+    \[CPI = \sum_{i=1}^{IC}{CPI_i \cdot F_i} \text{\footnotesize{    with F, instruction frequency   }} F_i = \frac{\#I_i}{IC}\]
+
+\section{MIPS and MFLOPS}
+    \subsection{MIPS}
+    Millions of instructions per second
+    \[MIPS = \frac{IC}{CPU\:time\cdot 10^6} = \frac{CC\:Frequency}{CPI \cdot 10^6}\]
+    \[CPU\:time = \frac{IC}{MIPS\cdot 10^6} \]
+    \subsection{MFLOPS}
+    Millions of floating point operations per second
+    \[MFLOPS = \frac{IC_{floating\:point}}{CPU\:time\cdot 10^6} \]
+
+\section{Power consumption}
+    \[P = \frac{E}{t}\]
+    \[P = \frac{1}{CPU\:time}\cdot\sum_{i=1}^{n}{E_i \cdot I_i}\]
+
+\section{Dependability}
+    Mean time to failure (MTTF)\newline
+    Mean time to repair (MTTR)\newline
+    Mean time between failures (MTBF) \[MTBF = MTTF + MTTR\]
+    Availability \[A = \frac{MTTF}{MTBF}\]
+
+\end{document}

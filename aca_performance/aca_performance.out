@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Speedup}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Performance}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Performance ratios}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Performance percentage}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Amdhal's law}{}% 5
+\BOOKMARK [1][-]{section.3}{CPU Time - execution time}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{CPU Time}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Average CPI}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{MIPS and MFLOPS}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{MIPS}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{MFLOPS}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Power consumption}{}% 12
+\BOOKMARK [1][-]{section.6}{Dependability}{}% 13
