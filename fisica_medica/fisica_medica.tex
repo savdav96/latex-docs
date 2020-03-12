@@ -1,0 +1,179 @@
+\documentclass[12pt]{article}
+\usepackage{lingmacros}
+\usepackage{tree-dvips}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+
+
+\setcounter{secnumdepth}{4}
+\begin{document}
+\title{%
+  Formulario di Fisica Medica \\
+  \large Facoltà di Medicina \\
+  Università degli studi di Milano \\
+}
+
+\author{Davide Savoldelli}
+
+\maketitle
+\tableofcontents
+
+
+\section{Meccanica}
+    \subsection{Cinematica}
+        \subsubsection{Moto rettilineo uniforme}
+            Velocità media: \[\vec{v_m} = \frac{\Delta s}{\Delta t}\]
+            Velocità istantanea: \[\vec{v_i} = \lim_{\Delta t \to 0}{\frac{\Delta s}{\Delta t} = \frac{ds}{dt}}\]
+            Legge oraria: \[\vec{x}(x) = x_0 + vt\]
+        \subsubsection{Moto rettilineo uniformemente accelerato}
+            Accelerazione media: \[\vec{a_m} = \frac{\Delta v}{\Delta t}\]
+            Accelerazione istantanea: \[\vec{a_i} = \lim_{\Delta t \to 0}{\frac{\Delta v}{\Delta t} = \frac{dv}{dt}} = \frac{d^2s}{dt^2}\]
+            Legge oraria: \[\vec{x}(t) = x_0 + v_0t + \frac{1}{2}at^2\]
+            Velocità: \[\vec{v}(t) = v_0 + at\]
+            \[v^2(x) = v_0^2 + 2ax \]
+        \subsubsection{Moto armonico}
+            Accelerazione legata alla posizione del punto:
+            \[\vec{a}(t) = \frac{d^2}{dt^2}x(t) = -\omega^2x(t) \] 
+            è un'equazione differenziale che si può risolvere con una funzione del tipo:
+            Posizione: \[\vec{x}(t) = x_0 cos(\omega t + \phi)\]
+            Velocità: \[\vec{v}(t) = -\omega x_0 sin(\omega t + \phi)\]
+            Accelerazione: \[\vec{a}(t) = -\omega^2 x_0 cos(\omega t + \phi)\]
+            Periodo: \[T = \frac{2\pi}{\omega}\]
+            Frequenza: \[\nu = T^{-1} = \frac{\omega}{2\pi}\]
+        \subsubsection{Moto circolare}
+            Vettore raggio: \[\vec{r}(t) = Rx(t)\hat{i} + Ry(t)\hat{j} = Rcos(\theta(t))\hat{i} + Rsin(\theta(t)))\hat{j}\]
+            Posizione: \[\vec{x}(t) = \theta(t)R\]
+            Velocità (tangenziale): \[\vec{v}(t) = \omega(t) R\]
+            Accelerazione tangenziale: \[\vec{a_t}(t) = \alpha(t) R\]
+            Accelerazione centripeta: \[\vec{a_c}(t) = \frac{v^2(t)}{R} = \omega^2(t){R}\]
+            Accelerazione: \[\vec{a}(t) = a_t(t)\hat{\tau} + a_c(t)\hat{n} \]         
+        \subsubsection{Moto del proiettile}
+            Equazioni del moto:
+            
+            \begin{equation*}
+                \left\{
+                \begin{array}{l}
+                x(t) = x_0 + vt\\
+                y(t) = y_0 + v_ot - \frac{1}{2}gt^2 
+                \end{array}
+                \right.
+                \end{equation*}
+    \subsection{Dinamica}
+        \subsubsection{Leggi di Newton}
+        \begin{itemize}
+            \item Principio d'inerzia:  Un corpo non soggetto a forze permane nel suo stato di
+            quiete o moto rettilineo uniforme. Condizione di equilibrio: \[\vec{R_{tot}} = 0\]
+            \item Seconda legge di Newton: \[\vec{F} = m\vec{a}\]
+            \item Principio azione-reazione: \[\vec{F}_{AB} = -\vec{F}_{BA}\]
+        \end{itemize}
+        \subsubsection{Forze}
+            \paragraph*{Forza Peso}
+            \[\vec{F}_p = - m\vec{g}\]
+            \paragraph*{Forza Normale}
+            Rappresenta la forza che un vincolo oppone a un corpo (secondo la terza legge della dinamica)
+            Essa è perpendicolare alla superficie del vincolo.
+            \paragraph*{Tensione}
+            Rappresenta la forza che una corda tesa subisce e, se non ci sono deformazioni, \emph{trasmette costante per tutta la sua lunghezza}
+            \paragraph*{Forza di attrito}
+            \begin{itemize}
+                \item Attrito statico e dinamico: \[\vec{F}_{att} = - \mu_{s/d}|\vec{N}|\]
+                \item Attrito aerodinamico: \[|\vec{D}| = \frac{1}{2}C\rho A\vec{v^2}\]
+            \end{itemize}
+            \paragraph*{Forza centripeta}
+            \[\vec{F}_c = m\frac{\vec{v^2}}{R}\]
+            \paragraph*{Forza di attrazione gravitazionale}
+            \[\vec{F}_g = G\frac{m_1 m_2}{r^2}\]
+            \paragraph*{Forza elastica (di Hooke)}
+            \[\vec{F}_h = -k\Delta \vec{x}\]
+            \paragraph*{Teorema dell'impulso}
+            \[\vec{I} = \Delta\vec{p} = m\Delta\vec{v} = \vec{F}\Delta t\]
+        \subsubsection{Energia}
+            \paragraph*{Lavoro}
+            \[L = \int_{l}{\vec{F} \cdot d \vec{x}}\]
+            \paragraph*{Lavoro con F costante}
+            \[L = \int_{l}{\vec{F} \cdot d \vec{x}} = \vec{F}\int_{l}{ d \vec{x}} = \vec{F}(x_2 - x_1)\]
+            \paragraph*{Esempio con F non costante (lavoro della forza elastica)}
+            \[L = \int_{l}{-k x \cdot d \vec{x}} = -\frac{1}{2}k\Delta x^2\]
+            \paragraph*{Energia potenziale}
+            \[U = m\vec{g}h\]
+            \paragraph*{Energia cinetica}
+            \[K = \frac{1}{2}m\vec{v^2}\]
+            \paragraph*{Teorema dell'energia cinetica}
+            \[L_{TOT} = \Delta K\]
+            \paragraph*{Conservazione dell'energia meccanica}
+            \[\Delta E_m = \Delta U + \Delta K = 0 \text{\footnotesize{ (campi di forze conservative)}} \]
+            \[\Delta E_m = \Delta U + \Delta K = L_{Fnc} \text{\footnotesize{ (campi di forze non conservative)}} \]
+            \paragraph*{Potenza media}
+            \[P_m = \frac{L}{\Delta t}\]
+            \paragraph*{Potenza istantanea}
+            \[P_i = \frac{dL}{dt} = \vec{F}d\vec{v}\]
+\section{Termodinamica}
+    \subsection{Temperatura}
+    \subsection{Gas}
+    \subsection{Calore}
+    \subsection{Trasformazioni}
+        \subsubsection{Isocora}
+        \subsubsection{Isobara}
+        \subsubsection{Isoterma}
+        \subsubsection{Adiabatica}
+    \subsection{Macchina di Carnot}
+    \subsection{Entropia e Secondo Principio}
+\section{Fluidi}
+    \subsection{Fluidostatica}
+    \subsection{Fluidodinamica}
+        \subsubsection{Fluidi Ideali}
+        \subsubsection{Fluidi Reali}
+            \paragraph{Fluidi Newtoniani}
+            \paragraph{Fluidi non Newtoniani}
+    \subsection{Tensione superficiale}
+\section{Elettromagnetismo}
+\section{Onde}
+
+Don't forget to include examples of topicalization.
+They look like this:
+
+{\small
+\enumsentence{Topicalization from sentential subject:\\ 
+\shortex{7}{a John$_i$ [a & kltukl & [el & 
+  {\bf l-}oltoir & er & ngii$_i$ & a Mary]]}
+{ & {\bf R-}clear & {\sc comp} & 
+  {\bf IR}.{\sc 3s}-love   & P & him & }
+{John, (it's) clear that Mary loves (him).}}
+}
+
+\subsection*{How to handle topicalization}
+
+I'll just assume a tree structure like (\ex{1}).
+
+{\small
+\enumsentence{Structure of A$'$ Projections:\\ [2ex]
+\begin{tabular}[t]{cccc}
+    & \node{i}{CP}\\ [2ex]
+    \node{ii}{Spec} &   &\node{iii}{C$'$}\\ [2ex]
+        &\node{iv}{C} & & \node{v}{SAgrP}
+\end{tabular}
+\nodeconnect{i}{ii}
+\nodeconnect{i}{iii}
+\nodeconnect{iii}{iv}
+\nodeconnect{iii}{v}
+}
+}
+
+\subsection{Mood}
+
+Mood changes when there is a topic, as well as when
+there is WH-movement.  \emph{Irrealis} is the mood when
+there is a non-subject topic or WH-phrase in Comp.
+\emph{Realis} is the mood when there is a subject topic
+or WH-phrase.
+
+\end{document}
