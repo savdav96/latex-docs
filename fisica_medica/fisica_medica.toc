@@ -8,26 +8,30 @@
 \contentsline {subsection}{\numberline {1.2}Dinamica}{4}{subsection.1.2}%
 \contentsline {subsubsection}{\numberline {1.2.1}Leggi di Newton}{4}{subsubsection.1.2.1}%
 \contentsline {subsubsection}{\numberline {1.2.2}Forze}{4}{subsubsection.1.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.3}Energia}{5}{subsubsection.1.2.3}%
-\contentsline {section}{\numberline {2}Termodinamica}{7}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Temperatura}{7}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Gas}{7}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Calore}{7}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Trasformazioni}{7}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Isocora}{7}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}Isobara}{7}{subsubsection.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.4.3}Isoterma}{7}{subsubsection.2.4.3}%
-\contentsline {subsubsection}{\numberline {2.4.4}Adiabatica}{7}{subsubsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.5}Macchina di Carnot}{7}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Entropia e Secondo Principio}{7}{subsection.2.6}%
-\contentsline {section}{\numberline {3}Fluidi}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Fluidostatica}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Fluidodinamica}{7}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Fluidi Ideali}{7}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Fluidi Reali}{7}{subsubsection.3.2.2}%
-\contentsline {paragraph}{\numberline {3.2.2.1}Fluidi Newtoniani}{7}{paragraph.3.2.2.1}%
-\contentsline {paragraph}{\numberline {3.2.2.2}Fluidi non Newtoniani}{7}{paragraph.3.2.2.2}%
-\contentsline {subsection}{\numberline {3.3}Tensione superficiale}{8}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Elettromagnetismo}{8}{section.4}%
-\contentsline {section}{\numberline {5}Onde}{8}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Mood}{8}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {1.2.3}Energia}{6}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Impulso e quantità di moto}{7}{subsubsection.1.2.4}%
+\contentsline {section}{\numberline {2}Termodinamica}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Temperatura}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Gas}{8}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Calore}{9}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Capacità termica e calore specifico}{9}{subsubsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.4}Primo Principio della Termodinamica}{10}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Trasformazioni}{10}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Isocora}{10}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Isobara}{10}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Isoterma}{10}{subsubsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.4}Adiabatica}{11}{subsubsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.6}Macchina di Carnot}{11}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Rendimento della macchina di Carnot}{12}{subsubsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.7}Entropia e Secondo Principio}{13}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Fluidi}{13}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Fluidostatica}{13}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Fluidodinamica}{13}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Fluidi Ideali}{13}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Fluidi Reali}{13}{subsubsection.3.2.2}%
+\contentsline {paragraph}{\numberline {3.2.2.1}Fluidi Newtoniani}{13}{paragraph.3.2.2.1}%
+\contentsline {paragraph}{\numberline {3.2.2.2}Fluidi non Newtoniani}{14}{paragraph.3.2.2.2}%
+\contentsline {subsection}{\numberline {3.3}Tensione superficiale}{14}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Elettromagnetismo}{14}{section.4}%
+\contentsline {section}{\numberline {5}Onde}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Mood}{14}{subsection.5.1}%

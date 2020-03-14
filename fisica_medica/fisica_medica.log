@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.29)  1 MAR 2020 02:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.11)  14 MAR 2020 02:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/davide/docs/fisica_medica.tex
-(/home/davide/docs/fisica_medica.tex
-LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+**/home/davide/latex-docs/fisica_medica/fisica_medica.tex
+(/home/davide/latex-docs/fisica_medica/fisica_medica.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-02-25> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
@@ -36,14 +36,14 @@ tree-dvips version .91 of May 16, 1995
 \arrowwidth=\dimen140
 \arrowlength=\dimen141
 \arrowinset=\dimen142
-\pos@t=\toks14
-\pos@b=\toks15
-\pos@l=\toks16
-\pos@r=\toks17
-\pos@tl=\toks18
-\pos@tr=\toks19
-\pos@bl=\toks20
-\pos@br=\toks21
+\pos@t=\toks15
+\pos@b=\toks16
+\pos@l=\toks17
+\pos@r=\toks18
+\pos@tl=\toks19
+\pos@tr=\toks20
+\pos@bl=\toks21
+\pos@br=\toks22
 \@arrow=\count178
 \@tempdimc=\dimen143
 ) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
@@ -53,7 +53,7 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \aftertitleunit=\skip50
 \ttl@plus=\dimen144
 \ttl@minus=\dimen145
-\ttl@toksa=\toks22
+\ttl@toksa=\toks23
 \titlewidth=\dimen146
 \titlewidthlast=\dimen147
 \titlewidthfirst=\dimen148
@@ -66,7 +66,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2000/06/29 v2.01 AMS text
  (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks23
+\@emptytoks=\toks24
 \ex@=\dimen149
 )) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -94,21 +94,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip16
 \c@parentequation=\count186
 \dspbrk@lvl=\count187
-\tag@help=\toks24
+\tag@help=\toks25
 \row@=\count188
 \column@=\count189
 \maxfields@=\count190
-\andhelp@=\toks25
+\andhelp@=\toks26
 \eqnshift@=\dimen152
 \alignsep@=\dimen153
 \tagshift@=\dimen154
 \tagwidth@=\dimen155
 \totwidth@=\dimen156
 \lineht@=\dimen157
-\@envbody=\toks26
+\@envbody=\toks27
 \multlinegap=\skip52
 \multlinetaggap=\skip53
-\mathdisplay@stack=\toks27
+\mathdisplay@stack=\toks28
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -127,7 +127,7 @@ Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks28
+\KV@toks@=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -215,10 +215,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 13.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count268
 \l__pdf_internal_box=\box48
-) (/home/davide/docs/fisica_medica.aux)
+) (/home/davide/latex-docs/fisica_medica/fisica_medica.aux)
 \openout1 = `fisica_medica.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -253,12 +253,12 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \scratchbox=\box50
 \nofMPsegments=\count270
 \nofMParguments=\count271
-\everyMPshowfont=\toks29
+\everyMPshowfont=\toks30
 \MPscratchCnt=\count272
 \MPscratchDim=\dimen163
 \MPnumerator=\count273
 \makeMPintoPDFobject=\count274
-\everyMPtoPDFconversion=\toks30
+\everyMPtoPDFconversion=\toks31
 )))
 Package hyperref Info: Link coloring ON on input line 18.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -273,11 +273,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
 LaTeX Info: Redefining \nameref on input line 18.
- (/home/davide/docs/fisica_medica.out) (/home/davide/docs/fisica_medica.out)
+ (/home/davide/latex-docs/fisica_medica/fisica_medica.out) (/home/davide/latex-docs/fisica_medica/fisica_medica.out)
 \@outlinefile=\write3
 \openout3 = `fisica_medica.out'.
 
- (/home/davide/docs/fisica_medica.toc [1
+ (/home/davide/latex-docs/fisica_medica/fisica_medica.toc [1
 
 
 Non-PDF special ignored!
@@ -286,9 +286,9 @@ Non-PDF special ignored!
 \tf@toc=\write4
 \openout4 = `fisica_medica.toc'.
 
- [2] [3] [4] [5] [6] [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
- [8
+ [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
+ [14
 Non-PDF special ignored!
 <special> ps:@beginspec/nodemargin 2.0 pt def 0.3 pt setlinewidth [] 0 setd...
 Non-PDF special ignored!
@@ -308,27 +308,27 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> ps:@beginspec/nodemargin 2.0 pt def 0.3 pt setlinewidth [] 0 setd...
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
- (/home/davide/docs/fisica_medica.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
+ (/home/davide/latex-docs/fisica_medica/fisica_medica.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
 Package rerunfilecheck Info: File `fisica_medica.out' has not changed.
-(rerunfilecheck)             Checksum: D9FE9C782FCF9672242CADDE8FFCF218;2004.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
+(rerunfilecheck)             Checksum: B9789DC18FB54C3B60BE0CF25B6F5383;2371.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
  ) 
 Here is how much of TeX's memory you used:
- 6031 strings out of 481239
- 90135 string characters out of 5920377
- 358106 words of memory out of 5000000
- 21166 multiletter control sequences out of 15000+600000
+ 6048 strings out of 480994
+ 90653 string characters out of 5914631
+ 359486 words of memory out of 5000000
+ 21418 multiletter control sequences out of 15000+600000
  541064 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,9n,31p,248b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on /home/davide/docs/fisica_medica.pdf (8 pages, 169407 bytes).
+ 34i,9n,31p,268b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on /home/davide/latex-docs/fisica_medica/fisica_medica.pdf (14 pages, 194200 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 245 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 249 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 322 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 
