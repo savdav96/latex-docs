@@ -27,7 +27,7 @@
 \maketitle
 \tableofcontents
 
-
+\newpage
 \section{Meccanica}
     \subsection{Cinematica}
         \subsubsection{Moto rettilineo uniforme}
@@ -99,7 +99,6 @@
             \end{itemize}
             \paragraph*{Forza elastica (di Hooke)}
             \[\vec{F}_h = -k\Delta \vec{x}\]
-            \newpage
         \subsubsection{Energia}
             \paragraph*{Lavoro}
             \[L = \int_{l}{\vec{F} \cdot d \vec{x}}\]
@@ -198,7 +197,7 @@
         \[Q = L = n R T_0 ln{\frac{V_2}{V_1}}\]
         \paragraph*{Funzione}
         Essendo la temperatura costante
-        \[pV = nRT_0 => pV = cost\]
+        \[pV = nRT_0 = cost\]
         il grafico nel piano di Clapeyron è un'iperbole.
         \subsubsection{Adiabatica}
         \[dU = n c_v dT\]
@@ -260,13 +259,66 @@
         \[\Delta S_{universo} = \Delta S_{sistema} + \Delta S_{ambiente} \]
         Ma il sistema è isolato, quindi non ha variazione di entropia, perciò:
         \[\Delta S_{universo} = \Delta S_{sistema} > 0\]
-        \section{Fluidi}
+\newpage
+    \section{Fluidi}
     \subsection{Fluidostatica}
+    \paragraph*{Legge di Stevino}
+    \[P(h) = P_0 + \rho_{F} g h\]
+    \[\Delta P = \rho_{F} g h\]
+    \paragraph*{Principio di Pascal}
+    \[\frac{F_1}{A_1} = \frac{F_2}{A_2} = \Delta P\]
+    \paragraph*{Principio di Archimede}
+    \[F_{arch} = \rho_{F} g V\]
     \subsection{Fluidodinamica}
+    \paragraph*{Portata}
+    \[Q = \frac{\Delta V}{\Delta t}\]
+    \paragraph*{Equazione di continuità}
+    \[Q = Av\]
         \subsubsection{Fluidi Ideali}
+        \paragraph*{Teorema di Bernoulli}
+        \[\rho g h_1 + P_1 + \frac{1}{2} \rho v_1^2 = \rho g h_2 + P_2 + \frac{1}{2} \rho v_2^2 = k\]
+        \paragraph*{Paradosso di Bernoulli}
+        \emph{La pressione è maggiore dove la sezione è maggiore.} 
+        Oseervando l'equazione di Bernoulli, P è maggiore 
+        quando v è minore (a parità di tutti gli altri contributi ed essendo la somma di questi costante).
+        Perciò se v è minore per l'equazione di continuità l'area
+        è maggiore, considerando un fluido stazionario (a portata costante).
+        \paragraph*{Teorema di Torricelli}
+        \[v_{uscita} = \sqrt{2gh}\]
         \subsubsection{Fluidi Reali}
-            \paragraph{Fluidi Newtoniani}
-            \paragraph{Fluidi non Newtoniani}
+        \[\rho g h_1 + P_1 + \frac{1}{2} \rho v_1^2 = \rho g h_2 + P_2 + \frac{1}{2} \rho v_2^2 + R\]
+        \[\]
+        \paragraph*{Gradiente di velocità}
+        \[lim_{\Delta r \to 0}{\frac{(v + \Delta v)}{\Delta r}} = \frac{dv}{dr}\]
+        \paragraph*{Sforzo tangenziale}
+        \[\frac{F_{att}}{A} = \eta \frac{dv}{dr}\]
+        \[F_{att} = \eta A \frac{dv}{dr}\]
+        \paragraph*{Legge di Poiseuille (regime laminare)}
+        \[v(r) = \frac{1}{4}\frac{P_1 - P_2}{l \cdot \eta}(R^2 - r^2)\]
+        \[v_{max} = \frac{1}{4}\frac{\Delta P}{l \cdot \eta}R^2\]
+        \[v(r) = v_{max}(1-\frac{r^2}{R^2})\]
+        \paragraph*{Calcolo portata, data la velocità in un condotto circolare}
+        \[Q = \frac{\pi}{8}\frac{\Delta P}{l \cdot \eta}R^4\]
+        \[\Delta P = \mathcal{R}Q\]
+        \[\mathcal{R} = \frac{8}{\pi}\frac{l \cdot \eta}{R^4}\]
+        Analogia con la resistenza elettrica:
+        \begin{itemize}
+            \item Per condotti in parallelo: \[\frac{1}{\mathcal{R}_{eq}} = \frac{1}{\mathcal{R}_{1}} + \frac{1}{\mathcal{R}_{2}} + ... + \frac{1}{\mathcal{R}_{n}}\]
+            \[\mathcal{R}_{eq} = \frac{1}{\sum_{i = 1}^{n}{\frac{1}{\mathcal{R}_i}}}\]
+            \item Per condotti in serie: \[\mathcal{R}_{eq} = \mathcal{R}_1 + \mathcal{R}_2 + ... + \mathcal{R}_n = \sum_{i = 1}^{n}{\mathcal{R}_i}\]
+        \end{itemize}
+        \paragraph*{Regime turbolento (Re = 2000)}
+        Velocità critica di passaggio da regime laminare a turbolento
+        \[v_{crit} = \frac{Re \cdot \eta}{R \cdot \rho}\]
+        \paragraph*{Fluidi Newtoniani}
+        La viscosità dipende solo dalla temperatura
+        \paragraph*{Fluidi non Newtoniani}
+        La viscosità dipende dalla temperatura e dal gradiente di velocità del fluido.
+        Si distinguono in fluidi:
+        \begin{itemize}
+            \item pseudoplastici, per i quali la viscosità diminuisce all'aumentare del grandiente di velocità (come il sangue)
+            \item dilatanti, per i quali la viscosità aumenta all'aumentare del gradiente di velocità
+        \end{itemize}
     \subsection{Tensione superficiale}
 \section{Elettromagnetismo}
 \section{Onde}
