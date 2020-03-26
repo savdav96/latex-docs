@@ -320,7 +320,54 @@
             \item dilatanti, per i quali la viscosità aumenta all'aumentare del gradiente di velocità
         \end{itemize}
     \subsection{Tensione superficiale}
-\section{Elettromagnetismo}
+    L'aumento di superficie di un fluido è possibile agendo \emph{contro} le forze di coesione che 
+    uniscono le molecole del liquido. Un fluido infatti tende sempre ad avere una forma che gli consenta di
+    esporsi il meno possibile ad un fluido di diversa natura.
+    \paragraph*{Forza necessaria ad espandere la superficie}
+    \[F = 2\tau l \:\:\:\:\tau \: \text{detta tensione superficiale e dipendente dal fluido}\]
+    \paragraph*{Lavoro per unità di superficie}
+    \[L_c = 2\tau l \Delta x = 2 \tau \Delta S\]
+    In una superficie sferica:
+    \[\Delta L_c = F\delta s = P_c \delta A \Delta R\]
+    \[L_{tot} = P_c \Delta R S_{tot} = P_c \Delta R 4\pi R^2\]
+    possiamo esprimere il lavoro anche come:
+    \[\Delta S = 4\pi (R + \Delta R)^2 - 4\pi R^2\]
+    \[\Delta S = 4\pi R^2 + 4\pi \Delta R^2 + 8\pi R\Delta R - 4\pi R^2\]
+    \[4\pi \Delta R^2 \:\:\:\: \text{trascurabile}\]
+    Perciò calcolo il lavorro usando il nuovo differenziale di superficie:
+    \[L = 2 \tau \Delta S = 16 \tau\pi R \Delta R\]
+    uguagliando con il lavoro trovato in precendenza
+    \[16 \tau\pi R \Delta R =  P_c \Delta R 4\pi R^2\]
+    trovo la Pressione di Laplace.
+    \begin{itemize}
+    \item per una superfice sferica:
+    \[P_c = \frac{4\tau}{R}\]
+    \item con una sola interfaccia:
+    \[L_c = 2 \tau \Delta S\]
+    \[P_c = \frac{2\tau}{R}\]
+    \item per una superfice ellissoidale:
+    \[P_c = \tau(\frac{1}{R_1}\cdot\frac{1}{R_2})\]
+    \item per una superfice cilidrica:
+    \[P_c = \tau\frac{1}{R}\]
+    \end{itemize}
+    \section{Elettromagnetismo}
+    \subsection{Elettrostatica}
+    \paragraph*{Campo elettrico}
+    \[\vec{E} = k \frac{Q}{r^2} \cdot \hat{r}\]
+    \[k = \frac{1}{4\pi\epsilon}, \:\:\:\: \epsilon = \epsilon_0\epsilon_r, \:\:\:\: \hat{r} \:\text{\footnotesize{versore raggio di modulo 1}}\]
+    \paragraph*{Forza elettrostatica}
+    \[\vec{F}_{el} = k \frac{Q q}{r^2} \cdot \hat{r}\]
+    \[\vec{F}_{el} = q\vec{E}\]
+    \paragraph*{Lavoro forza elettrostatica}
+    \[L = -k \frac{Q q}{r} \]
+    \paragraph*{Energia potenziale elettrostatica}
+    \[W(r) =-L= k \frac{Q q}{r} \]
+    \paragraph*{Potenziale elettrostatico}
+    \[\Delta V = V_b - V_a = -\frac{L_{a,b}}{q} = k\frac{Q}{r}\]
+    \[V(r) = \frac{W(r)}{q} = - \frac{L_{\infty, r}}{q}\]
+    \paragraph*{Momento dipolo elettrico}
+    \[P = qd\]
+    \subsection{Campo elettromagnetico}
 \section{Onde}
 
 Don't forget to include examples of topicalization.
