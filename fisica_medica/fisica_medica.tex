@@ -367,8 +367,57 @@
     \[V(r) = \frac{W(r)}{q} = - \frac{L_{\infty, r}}{q}\]
     \paragraph*{Momento dipolo elettrico}
     \[P = qd\]
+    \newline
     \subsection{Campo elettromagnetico}
-\section{Onde}
+    \paragraph*{Corrente elettrica}
+    \[I(t) = \frac{dq}{dt}\]
+    \paragraph*{Prima legge di Ohm}
+    \[V = \mathcal{R}I\]
+    \paragraph*{Seconda legge di Ohm}
+    \[\mathcal{R} = \rho\frac{L}{S}\]
+    \[\rho(T) = \rho_0(1+\alpha T)\]
+    \paragraph*{Forza elettromotrice}
+    Lavoro che il campo elettromotore compie per far percorrere
+    ad una carica unitaria positiva l'intero giro del circuito.
+    Rappresenta la ddp quando il generatore non eroga corrente (ma solo tensione).
+    \paragraph*{Leggi di Kirchhoff}
+    \begin{itemize}
+        \item Legge dei nodi \[\sum_{j} I_{j, entranti} = \sum_{k} I_{k, uscenti}\]
+        \item Legge delle maglie \[\sum_{i} \Delta V_{i, maglia} = 0\]
+    \end{itemize}
+    \paragraph*{Resistenze}
+    \begin{itemize}
+        \item Resistenze in parallelo: \[\frac{1}{\mathcal{R}_{eq}} = \frac{1}{\mathcal{R}_{1}} + \frac{1}{\mathcal{R}_{2}} + ... + \frac{1}{\mathcal{R}_{n}}\]
+        \[\mathcal{R}_{eq} = \frac{1}{\sum_{i = 1}^{n}{\frac{1}{\mathcal{R}_i}}}\]
+        \item Resistenze in serie: \[\mathcal{R}_{eq} = \mathcal{R}_1 + \mathcal{R}_2 + ... + \mathcal{R}_n = \sum_{i = 1}^{n}{\mathcal{R}_i}\]
+    \end{itemize}
+    \paragraph*{Potenza elettrica}
+    \[L = \Delta Q \]
+    \[P = \frac{L}{\Delta t} = \frac{VQ}{\Delta t} = VI\]
+    \[P = \frac{V^2}{\mathcal{R}} = \mathcal{R}I^2\]
+    \paragraph*{Capacità}
+    \[C = \frac{Q}{\Delta V}\]
+    Capacità conduttore sferico
+    \[C = 4\pi \epsilon_0r\]
+    \subsubsection{Condensatori}
+    \paragraph*{Campo elettrico}
+    \[\sigma = \frac{Q}{A}\]
+    \[\vec{E} = \frac{\sigma}{\epsilon}\]
+    \paragraph*{Potenziale condensatore piano}
+    \[\Delta V = \frac{L}{Q} = \vec{E}d\]
+    \paragraph*{Capacità condensatore piano}
+    \[C = \epsilon \frac{A}{d}\]
+    \paragraph*{Lavoro necessario a spostare una carica}
+    \[L_{tot} = \frac{1}{2}\frac{Q^2}{C} = \frac{1}{2}V^2C = \frac{1}{2}QV\]
+    \begin{itemize}
+        \item Condensatori in serie: \[\frac{1}{C_{eq}} = \frac{1}{C_{1}} + \frac{1}{C_{2}} + ... + \frac{1}{C_{n}}\]
+        \[\mathcal{R}_{eq} = \frac{1}{\sum_{i = 1}^{n}{\frac{1}{C_i}}}\]
+        \item Condensatori in parallelo: \[C_{eq} = C_1 + C_2 + ... + C_n = \sum_{i = 1}^{n}{C_i}\]
+    \end{itemize}
+    \paragraph*{Legge di carica del condensatore (in circuiti RC)}
+    \[I_c(t) = I_0\cdot e^{-\frac{t}{RC}}\]
+    \[V_c(t) = \frac{dI_c(t)}{dt} = V_0\cdot(1-e^{-\frac{t}{RC}})\]
+    \section{Onde}
 
 Don't forget to include examples of topicalization.
 They look like this:
