@@ -1,0 +1,169 @@
+\documentclass[12pt]{article}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\setcounter{secnumdepth}{4}
+\begin{document}
+\title{%
+  Homework 3 - PDF response file \\
+  \large Internet of Things \\
+  Politecnico di Milano \\
+}
+
+\author{Sara Acquaviva (943806), Davide Savoldelli (928676)}
+
+\maketitle
+
+\section{CoAP}
+    \subsection{What’s the difference between the message with MID:
+    3978 and the one with MID: 22636?}
+    The packet with message id 3978 is "Confirmable", while the one with message id
+    22636 is "Non Confirmable". This means that the former packet requires an acknowledgement for its reception,
+    while the latter does not. In fact an ACK for the packet with mid 3978 is provided (the packet No. 6702).
+    \subsection{Does the client receive the response of message No.
+    6949?}
+    Yes, the packet number 6949 is of the type "Confirmable", hence we can know if it has been received
+    or not. As an ACK for the same MID exists (the packet No. 6953), the 6949 got an answer.
+    \begin{lstlisting}
+        frame.number == 6949
+        coap.mid == 28357
+    \end{lstlisting}
+    Actually, the status of the ACK is "Method not Allowed". Hence, the GET does not 
+    obatain a proper response, just an ACK.
+    \subsection{How many replies of type Confirmable and result code
+    “Content” are received by the server “localhost”?}
+    There are eight packets that satisfy the filter.
+    \begin{lstlisting}
+        coap.code == 69 && ip.dst == 127.0.0.1
+    \end{lstlisting}
+\section{MQTT}
+    \subsection{How many messages containing the topic
+    “factory/department*/+” are published by a client with
+    user name: “jane”? \small{(where * replaces the dep. number,
+    e.g. factory/department1/+, factory/department2/+
+    and so on.)}}
+    First, we filter on the message sent by the username "jane".
+    \begin{lstlisting}
+      mqtt.username == "jane"
+    \end{lstlisting}
+    The are four messages of type "Connect", which connect to localhost from the TCP ports number 
+    42821, 40989, 40005 and 50985.
+    We use those ports to handle the connection to the username, as it appears only in Connect type messages.
+    Filtering the "Publish" messages (type 0x11) which connect from the same ports and whose topic
+    matches the regex "factory/department*/, we find six packets:
+    \begin{lstlisting}
+      mqtt.topic matches "factory/department[0-9]/" &&
+      mqtt.msgtype == 3 && ip.src == 127.0.0.1 && 
+      (tcp.srcport == 42821 || tcp.srcport == 40989 || tcp.srcport == 40005 || tcp.srcport == 50985) 
+    \end{lstlisting}
+    Being the packets of type "Published", obviously they cannot contain a topic with wildcards: these can be used only
+    by subscribers.
+    Unfortunately, none of the packet can be filtered by an eventual subscriber using the "+" wildcard after the department* level
+    in the topic, because all of them contain an extra sublevel. To filter the packets a subscriber should specify a topic made like
+    this: "factory/department*/+/+", being the "+" wildcard single level only.
+    \subsection{How many clients connected to the broker “hivemq”
+    have specified a will message?}
+    First, we have to understand what IP address is related to the "hivemq" name. To do so, we 
+    have a lookup on the DNS received packets.
+    \begin{lstlisting}
+      dns.qry.name contains "hivemq" && dns.flags.response && dns.a
+    \end{lstlisting}
+    After that, we can filter the packets sent to that IP address that match the former predicate.
+    \begin{lstlisting}
+      mqtt.conflag.willflag == 1 && (ip.dst == 3.120.68.56 || ip.dst == 18.185.199.22)
+    \end{lstlisting}
+    That said, there are 16 matching packets. Among them there are two packets with the same clientId but 
+    different TCP source ports.
+    \subsection{How many publishes with QoS 1 don’t receive the ACK?}
+    We can filter all the publishes (129 packets) with:
+    \begin{lstlisting}
+      mqtt.qos == 1 && mqtt.msgtype == 3
+    \end{lstlisting}
+    Then, we filter only the Acknowledgements (74 packets) with:
+    \begin{lstlisting}
+      mqtt.msgtype == 4
+    \end{lstlisting}
+    Substracting the latter result from the former we obtain 55 packets without ACK.
+    Among the Publishes, we want to select only the publisher-broker packets (77):
+    \begin{lstlisting}
+      mqtt.qos == 1 && mqtt.msgtype == 3 && tcp.dstport == 1883
+    \end{lstlisting}
+    Finally, we can conclude that 3 (77 - 74) of the 55 packets which unreceived ACK
+    are from publisher-broker relationship, while the other 52 are from the broker-subscriber one. 
+    \subsection{How many last will messages with QoS set to 0 are
+    actually delivered?}
+    First, filtering the packets which bring a Last Will Message, we notice that it starts with 
+    the keyword "error".
+    \begin{lstlisting}
+      mqtt.conflag.willflag == 1
+    \end{lstlisting}
+    To know which Last Will Messages are actually delivered, we just look for the 
+    delivered messages with QoS 1 starting with "error".
+    \begin{lstlisting}
+      mqtt.msg contains "error" && mqtt.qos == 1
+    \end{lstlisting}
+    There are 4 packets which satisfy the condition.
+    \subsection{Are all the messages with QoS greater than 0 published by the
+    client “4m3DWYzWr40pce6OaBQAfk” correctly delivered
+    to the subscribers?}
+    We must firstly find all the messages sent by “4m3DWYzWr40pce6OaBQAfk” with QoS greater than 0.
+    Filtering the clientId:
+    \begin{lstlisting}
+      mqtt.clientid == "4m3DWYzWr40pce6OaBQAfk"
+    \end{lstlisting}
+    And looking at his socket, we filter his messages by QoS:
+    \begin{lstlisting}
+      mqtt.msgtype == 3 && ip.src == 10.0.2.15 && tcp.srcport == 58313 && mqtt.qos > 0
+    \end{lstlisting}
+    For everyone of them (there is only one message with QoS 2) we may check the reception of the PUBREC:
+    \begin{lstlisting}
+      mqtt.msgtype == 5&& ip.dst == 10.0.2.15 && tcp.dstport==58313
+    \end{lstlisting}
+    And then we check if the PUBREL has been sent back:
+    \begin{lstlisting}
+      mqtt.msgtype == 6&& ip.src == 10.0.2.15 && tcp.srcport == 58313
+    \end{lstlisting}
+    We find that there are no result out of the filter. Sticking to the schema QoS 2 (publisher-broker) + QoS 2 (broker-subscriber),
+    we notice that the broker cannot proceed until the PUBREL has been received. Hence, we can infer that the message has not 
+    been sent to the subscriber(s).
+    In every case, the process is incomplete.
+
+    \subsection{What is the average message length of a connect msg
+    using mqttv5 protocol? Why messages have different
+    size?}
+    There are 63 packets of type "Connect" and MQTT version 5:
+    \begin{lstlisting}
+      mqtt.msgtype == 1 && mqtt.ver == 5
+    \end{lstlisting}
+    The average size of the packets is 91 bytes. They have different size because of the 
+    optional fields that can be left empty. Moreover the MQTTv5 specifications
+    explain that Metadata in the header of the message are available and they can be used to 
+    specify user defined properties, which are, obviously, of different dimensions. 
+    \subsection{Why aren’t there any REQ/RESP pings in the pcap?}
+    The absence of the pings in the pcap is motivated by the fact that they are not required if 
+    time specified in the Keep-Alive field (similar to HTTP's) of Connection packets is greater than
+    the time required for the recipient(s) to answer. 
+
+\end{document}

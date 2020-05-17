@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}Executive Summary}{3}{section.1}%
+\contentsline {section}{\numberline {2}The Team}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Management Profile}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Why we are a winning team}{3}{subsection.2.2}%
+\contentsline {section}{\numberline {3}The Business Model}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Value Proposition, Vision, Mission and Values}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Customer Segments}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Marketing Plan}{3}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Key resources and activities}{3}{subsection.3.4}%
+\contentsline {section}{\numberline {4}External Environment}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Market analysis and key trends}{4}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}China Market}{4}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Italian Market}{8}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Competitors' analysis}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Competitive advatages of the business model}{11}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Sketch of the Business Model Canvas}{11}{section.5}%
+\contentsline {section}{\numberline {6}Sketch of the financial analysis (including funding requirements)}{11}{section.6}%
+\contentsline {section}{\numberline {7}Roadmap}{11}{section.7}%
